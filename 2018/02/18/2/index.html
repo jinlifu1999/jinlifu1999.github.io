@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Codeforces Round 460 划水记 | jinlifu1999&#39;s space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="第一次尝试给CF出题，感觉棒棒哒。特写一篇划水记来纪念这次神奇的经历。 造题阶段焦急等待大概就是有了一些小小的idea，觉得可以出在Div.2 CDE题了，于是就准备出一场CF。 CF对出题人是有限制的，大概是蓝名25场rated比赛，紫名15场，黄名5场，红名没有限制。出题需要在一个专门的地方把你的题目写好提交，最后由CF的coordinator审核你的题目，决定是否录用你的题目。 但值得注意的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Codeforces Round 460 划水记">
+<meta property="og:url" content="https://github.com/jinlifu1999/2018/02/18/2/index.html">
+<meta property="og:site_name" content="jinlifu1999&#39;s space">
+<meta property="og:description" content="第一次尝试给CF出题，感觉棒棒哒。特写一篇划水记来纪念这次神奇的经历。 造题阶段焦急等待大概就是有了一些小小的idea，觉得可以出在Div.2 CDE题了，于是就准备出一场CF。 CF对出题人是有限制的，大概是蓝名25场rated比赛，紫名15场，黄名5场，红名没有限制。出题需要在一个专门的地方把你的题目写好提交，最后由CF的coordinator审核你的题目，决定是否录用你的题目。 但值得注意的">
+<meta property="og:updated_time" content="2018-02-18T15:13:36.576Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Codeforces Round 460 划水记">
+<meta name="twitter:description" content="第一次尝试给CF出题，感觉棒棒哒。特写一篇划水记来纪念这次神奇的经历。 造题阶段焦急等待大概就是有了一些小小的idea，觉得可以出在Div.2 CDE题了，于是就准备出一场CF。 CF对出题人是有限制的，大概是蓝名25场rated比赛，紫名15场，黄名5场，红名没有限制。出题需要在一个专门的地方把你的题目写好提交，最后由CF的coordinator审核你的题目，决定是否录用你的题目。 但值得注意的">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/photo.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Lifu Jin</h5>
+          <a href="mailto:jinlifu19991109@163.com" title="jinlifu19991109@163.com" class="mail">jinlifu19991109@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/jinlifu1999" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/ysweb" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Codeforces Round 460 划水记</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Codeforces Round 460 划水记</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-02-18T08:18:50.971Z" itemprop="datePublished" class="page-time">
+  2018-02-18
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#造题阶段"><span class="post-toc-number">1.</span> <span class="post-toc-text">造题阶段</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#焦急等待"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">焦急等待</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#希望曙光"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">希望曙光</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#再造题"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">再造题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#小插曲"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">小插曲</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#准备阶段"><span class="post-toc-number">2.</span> <span class="post-toc-text">准备阶段</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#必备小知识"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">必备小知识</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#坑"><span class="post-toc-number">3.</span> <span class="post-toc-text">坑</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-2"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Codeforces Round 460 划水记</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-02-18 16:18:50" datetime="2018-02-18T08:18:50.971Z"  itemprop="datePublished">2018-02-18</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>第一次尝试给CF出题，感觉棒棒哒。特写一篇划水记来纪念这次神奇的经历。</p>
+<h2 id="造题阶段"><a href="#造题阶段" class="headerlink" title="造题阶段"></a>造题阶段</h2><h3 id="焦急等待"><a href="#焦急等待" class="headerlink" title="焦急等待"></a>焦急等待</h3><p>大概就是有了一些小小的idea，觉得可以出在Div.2 CDE题了，于是就准备出一场CF。</p>
+<p>CF对出题人是有限制的，大概是蓝名25场rated比赛，紫名15场，黄名5场，红名没有限制。出题需要在一个专门的地方把你的题目写好提交，最后由CF的coordinator审核你的题目，决定是否录用你的题目。</p>
+<p>但值得注意的一点是，从提交到通过审核这个过程历时非常之久，因为提交Contest Proposal的人太多了。(我是17年8月提交的proposal，审核通过大概是在18年年初QAQ)</p>
+<p>于是隔些时间就给coordinator发私信，结果人家基本不理我。OvO</p>
+<p>于是焦急等待了好几个月。</p>
+<h3 id="希望曙光"><a href="#希望曙光" class="headerlink" title="希望曙光"></a>希望曙光</h3><p>终于在某一天发私信后，coordinator回复了我，回复了我，回复了我(重要的事情说三遍233)，并表示他已经对我的题目做出了comment。欣喜之余打开一看，发现基本上都是：</p>
+<ul>
+<li>I think it is too straightforward even for D2A.</li>
+<li>I’m sure I’ve seen this problem somewhere, so it has to be replaced.</li>
+<li>I think there wasn’t exactly this problem, but the approach is widely-known, so it’s better to replace the problem.</li>
+<li>…</li>
+</ul>
+<p>此处手动添加一个”生无可恋”表情。</p>
+<p>大概只有1.5道题通过了他的审核。(那半道题还是我给他解释了以后他才觉得OK的)</p>
+<p>这两道题分别是后来的E和F。(想知道为啥有F的接着往下看吧233)</p>
+<p>于是我回信说：“好吧，那我再回去造点题。”</p>
+<h3 id="再造题"><a href="#再造题" class="headerlink" title="再造题"></a>再造题</h3><p>其实通过审核的是Div.2 CE两题，这样我只需要造个D出来，基本上问题就不大了，因为AB是分分钟就可以yy出来的。</p>
+<p>然后去翻了一些资料，希望找点灵感出来。大概是翻来翻去，找到了一个字符串题。然后魔改了一下(改了让求的东西)，觉得改完以后有个地方还是很喵的(其实也很蠢)，于是决定就这道题当D吧，提交上去又等了几个星期，最后</p>
+<p>过审核了。</p>
+<p>过审核了。</p>
+<p>过审核了。</p>
+<p>这道题是后来的D。</p>
+<p>也是很开心了。</p>
+<h3 id="小插曲"><a href="#小插曲" class="headerlink" title="小插曲"></a>小插曲</h3><p>现在有了CDE，还差AB。照理来说AB是好造的，然而造了几道，不是被说太难，就是被说太简单。</p>
+<p>还有另外一个问题，就是C。这个coordinator认为C太难了，因为需要求逆元。(逆元这种东西不应该是个人就会的嘛)他建议我把求逆元那一部分去掉，就是手动把需要求逆元的地方挪到等式右边。但是我是不同意的，因为一我觉得那样写的等式实在是太难看了，二其实我觉得这样写更容易想到我给出的解法。(还有就是我懒)</p>
+<p>接下来神奇的一幕发生了，由于我觉得我的题实在太水，再加之我多出了一道题，我决定这场比赛我出六道题。然后，C变成D，这样我就可以正大光明地维持C原来的样子，然后多一道题还可以让大家多玩一玩，顺便显得我的题没那么水，后来才发现这样也可以多一道hack题。</p>
+<p>好处多多有木有！</p>
+<p>当然coordinator也同意了。</p>
+<p>于是现在的ABCDEF分别对应后来的ABCEDF，然后可以准备写题面造数据了。</p>
+<h2 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h2><h3 id="必备小知识"><a href="#必备小知识" class="headerlink" title="必备小知识"></a>必备小知识</h3><p>CF的coordinator的ID是KAN，以后我就称他为KAN了。</p>
+<p>KAN给我发了一个文件，这个文件告诉我应该如何造题：(以下为节选)</p>
+<ul>
+<li>题面<ul>
+<li>题面不应过长，长度不应超过初始的文本框大小。</li>
+<li>在输入的变量后立即给出该变量的范围。</li>
+<li>…</li>
+</ul>
+</li>
+<li>数据<ul>
+<li>如果可以，记得把所有的小数据全都加入test里。(这非常重要)</li>
+<li>每道题通常有20到100组测试数据。</li>
+<li>Pretests应该有极限数据，确保爆int不能过的数据，还有一些随机生成的小数据。</li>
+<li>Div.2 A应该有7-9组Pretests，Div.1 E应该有10-20组Pretests。</li>
+<li>…</li>
+</ul>
+</li>
+<li>Checker和Validator<ul>
+<li>请使用testlib.h。</li>
+<li>…</li>
+</ul>
+</li>
+<li>…</li>
+</ul>
+<p>这个文件里还说，之后所有要做的工作都是要在一个名曰polygon的平台上完成的，这个平台真的是非常awesome，有如下非常棒的特性：</p>
+<ul>
+<li>写题面，并生成为HTML或Latex格式。</li>
+<li>使用数据生成器生成数据，支持向生成器传参数。</li>
+<li>写各种程序，包括标算暴力等等，并且可以通过innovation验证程序的正确性，以及通过stress功能hack掉某些程序。</li>
+<li>每个人编辑的是远程数据的一份拷贝，只有在Commit Changes以后才会试图修改远程数据。这样就不用各种拷文件传文件辣！</li>
+<li>添加Issue，相当于一个讨论版。</li>
+<li>…</li>
+</ul>
+<p>总而言之非常方便非常爽。而且导出的pdf文件也非常好看有木有！</p>
+<h2 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h2><p>今天太晚了，先写到这里了，有空接着写辣！</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-02-18T15:13:36.576Z" itemprop="dateUpdated">2018-02-18 23:13:36</time>
+</span><br>
+
+
+        
+        博主很懒，什么都没留下。
+        
+    </div>
+    
+    <footer>
+        <a href="https://github.com/jinlifu1999">
+            <img src="/img/photo.jpg" alt="Lifu Jin">
+            Lifu Jin
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/jinlifu1999/2018/02/18/2/&title=《Codeforces Round 460 划水记》 — jinlifu1999's space&pic=https://github.com/jinlifu1999/img/photo.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/jinlifu1999/2018/02/18/2/&title=《Codeforces Round 460 划水记》 — jinlifu1999's space&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/jinlifu1999/2018/02/18/2/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Codeforces Round 460 划水记》 — jinlifu1999's space&url=https://github.com/jinlifu1999/2018/02/18/2/&via=https://github.com/jinlifu1999" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/jinlifu1999/2018/02/18/2/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/02/16/1/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hello World</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'jinlifu1999',
+            repo: 'jinlifu1999.github.io',
+            oauth: {
+                client_id: '40c28e45786dcbec81b8',
+                client_secret: 'acdf3c57425014ef1961dea62da5f094bdcf41b7',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Lifu Jin &copy; 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://github.com/jinlifu1999/2018/02/18/2/&title=《Codeforces Round 460 划水记》 — jinlifu1999's space&pic=https://github.com/jinlifu1999/img/photo.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://github.com/jinlifu1999/2018/02/18/2/&title=《Codeforces Round 460 划水记》 — jinlifu1999's space&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/jinlifu1999/2018/02/18/2/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Codeforces Round 460 划水记》 — jinlifu1999's space&url=https://github.com/jinlifu1999/2018/02/18/2/&via=https://github.com/jinlifu1999" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://github.com/jinlifu1999/2018/02/18/2/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://github.com/jinlifu1999/2018/02/18/2/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '快回来！我想你了QAQ';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '哇你终于回来啦！';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
